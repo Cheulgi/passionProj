@@ -1,16 +1,47 @@
 .description{
     color: plum;
+    text-align: center;
+
 }
 
-.images{
-    width: 10%;
+.image-area{
+    width:100px;
+    float: right;
+    
 }
 
-
+img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px; 
+   }
 body {
+    /* */
     background-image: url("https://wallpapercave.com/wp/wp3284839.gif");
     background-size: cover;
+    background-color: black;
     height: 100vh;
     padding: 0;
     margin: 0;
 }
+
+audio::-webkit-media-controls-panel{
+    background-color: plum;
+    /* controls the length and width of player*/
+    padding: 10px;
+    margin: 10px;
+
+    
+}
+
+
+
+.songList{
+    color: plum;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 500px; 
+    margin:auto; 
+    position: relative;
+}
+
+
