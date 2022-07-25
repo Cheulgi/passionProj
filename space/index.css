@@ -1,11 +1,11 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Pacifico&display=swap');
 
-html{
-        cursor: url('cursortest.png'),auto;
+html {
+    cursor: url('cursortest.png'), auto;
 
 }
-.description{
+
+.description {
     color: plum;
     text-align: center;
     font-family: "Cookie";
@@ -15,78 +15,188 @@ html{
     border: 10px;
 }
 
-.image-area{
+.image-area {
     display: inline;
 }
 
 img {
-    width: 40px;
-    height: auto;
-    padding: 0px; 
+    width: 400px;
+    height: 400px;
+    padding: 0px;
     border-radius: 5%;
     object-fit: cover;
-    
-   }
+
+}
+
 body {
     /* */
     background-image: url("https://wallpapercave.com/wp/wp3284839.gif");
     background-size: cover;
     background-color: black;
     height: 100vh;
-    padding: 0;
+    padding: 0px;
     margin: 0;
-    cursor: url('cursortest.png'),auto;
 }
 
 
-audio::-webkit-media-controls-panel{
+audio::-webkit-media-controls-panel {
     background-color: plum;
     /* controls the length and width of player*/
     padding-left: 100px;
     margin-left: 100px;
     border: 10px;
-    cursor: url('cursortest.png'),auto;
+    cursor: url('cursortest.png'), auto;
 
 
-    
+
 }
 
-.songList{
+.songList {
     color: plum;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 500px; 
-    margin:auto; 
-    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
-#titles{
+#titles {
     color: rgb(148, 113, 212);
     font-family: "Pacifico";
     text-align: center;
 }
 
-.gallery{
+.gallery {
     border-color: aqua;
     margin: 100px;
     border-bottom: 500px;
     background-color: rgba(127, 158, 158, 0.616);
     background-image: url("https://gifimage.net/wp-content/uploads/2018/04/pixel-star-gif-4.gif");
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size: 100%;
 
     /* round the edges*/
     border-radius: 15px;
 
 }
 
-#galleryItem{
+#galleryItem {
     margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
 }
 
-.gallery img{
+.gallery img {
     width: 20%;
     height: auto;
 }
+
+.containSong {
+    border-color: aqua;
+    margin: 100px;
+    border-bottom: 500px;
+    background-color: white;
+
+    background-size: 100%;
+
+    /* round the edges*/
+    border-radius: 15px;
+}
+
+.content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;
+    ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+
+    nav.black ul {
+        background: #000;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+

@@ -2,9 +2,14 @@
 <html>
 
 <head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title> My Passions</title>
     <link rel="stylesheet" href="index.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- https://wallpapercave.com/wp/wp3284839.gif"-->
 
@@ -12,81 +17,127 @@
 
 <body>
 
+    <nav>
+        <div class="menu-icon">
+           <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="logo">
+           LOGO
+        </div>
+        <div class="menu">
+           <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="music.html">Music</a></li>
+              <li><a href="#">Blog</a></li>
+
+           </ul>
+        </div>
+     </nav>
+
     <div class="description">
         <h1 id="titles">
             Space.
         </h1>
 
-        <p>
-            Space is pretty, deep and mysterious.
-            We are all made up of star stuff and the idea that
-            the stuff came together to form us is amazing.
-            I also find it thrilling because it is unknown if there
-            is life on other planets.
+        <div class="row align-items-center">
 
-        </p>
+            <div class="col">
+                <p>
+                    Space is pretty, deep and mysterious.
+                    We are all made up of star stuff and the idea that
+                    the stuff came together to form us is amazing.
+                    I also find it thrilling because it is unknown if there
+                    is life on other planets.
 
-        <p>
-            No one really introduced me to space.
-            I’ve always liked to look at the night sky.
-            The moon is what inspired me to learn more about space.
-            I think that's just because it's the closest celestial body
-            that I can observe in detail without a telescope.
+                </p>
+            </div>
 
-        </p>
+            <div class="row align-items-center">
 
-        <p>
-            Stars and NASA continue to inspire me.
-            I love finding new stars that I haven't noticed before.
-            Especially since there is a lot of light pollution in the city,
-            it's very awe-inspiring when I am able to see more stars.
-            I love the work that NASA does and how they share a lot of their
-            knowledge with the public.
-        </p>
+                <div class="col">
+                    <p>
+                        No one really introduced me to space.
+                        I’ve always liked to look at the night sky.
+                        The moon is what inspired me to learn more about space.
+                        I think that's just because it's the closest celestial body
+                        that I can observe in detail without a telescope.
 
+                    </p>
+                </div>
+                <div class="row align-items-center">
+
+                    <div class="col">
+                        <p>
+                            Stars and NASA continue to inspire me.
+                            I love finding new stars that I haven't noticed before.
+                            Especially since there is a lot of light pollution in the city,
+                            it's very awe-inspiring when I am able to see more stars.
+                            I love the work that NASA does and how they share a lot of their
+                            knowledge with the public.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <div class="songList">
 
-        <ol> Some beautiful songs for space songs:
-            <li> <em>SERENDIPITY</em>
-                <br>
-                <audio controls>
-                    <source src="SERENDIPITY.mp3" style="color: white;" >
-                </audio>
-            </li>
-            <li>
-                <em>
-                    Crystal Snow
-                </em>
-            </li>
-            <li>
-                <em> High</em>
+    <a class="btn btn-primary" href="#" role="button">Link</a>
 
-            </li>
-
-
-        </ol>
-
-    </div>
-
-    <div class="gallery">
-        <h2 id="titles">
-            Gallery
-        </h2>
-
-        <div class="image-area">
-            <img src="https://imageio.forbes.com/specials-images/imageserve/62d26b610a00ec80dc9139f3/The-Southern-Ring-Nebula--as-captured-by-the-James-Webb-Space-Telescope--JWST--/960x0.jpg?format=jpg&width=960">
-            
-            <img src="https://i.natgeofe.com/k/6de484fb-f91d-4df9-8d71-b391726496ca/neptune-planet_16x9.jpg?w=1200" id="galleryItem">
-            <img src="https://cdn.mos.cms.futurecdn.net/snbrHBRigvvzjxNGuUtcck.jpg">
     
+
+    <div class="medias">
+
+        <!-- Gallery -->
+        <div class="gallery">
+            <h2 id="titles">
+                Gallery
+            </h2>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="width: 500px;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://imageio.forbes.com/specials-images/imageserve/62d26b610a00ec80dc9139f3/The-Southern-Ring-Nebula--as-captured-by-the-James-Webb-Space-Telescope--JWST--/960x0.jpg?format=jpg&width=960"
+                            class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.natgeofe.com/k/6de484fb-f91d-4df9-8d71-b391726496ca/neptune-planet_16x9.jpg?w=1200"
+                            class="d-block w-100 h-200" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.mos.cms.futurecdn.net/snbrHBRigvvzjxNGuUtcck.jpg" class="d-block w-100 "
+                            alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
         </div>
 
 
     </div>
 
-<!--
+    </div>
+
+    <!--
     <ul style="color: aliceblue;">
         More
         <li>the moon</li>
@@ -95,6 +146,10 @@
     </ul>
 -->
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="navBar.js"></script>
 </body>
 
 
