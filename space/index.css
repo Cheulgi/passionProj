@@ -19,7 +19,7 @@ html {
     display: inline;
 }
 
-.menu{
+.menu {
     font-family: "Cookie";
     color: plum;
 }
@@ -113,4 +113,3 @@ audio::-webkit-media-controls-panel {
     line-height: 30px;
     text-align: justify;
 }
-

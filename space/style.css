@@ -1,12 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Pacifico&display=swap');
+
+
+
+#rcorners1 {
+    border-radius: 25px;
+    border-style: dotted;
+    border-color: white;
+    background: plum;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+
+}
+
+html {
+    cursor: url('cursortest.png'), auto;
+
+}
+
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
 * {
     margin: 0;
     padding: 0;
-  -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: url('cursortest.png'), auto;
+
 }
 
 canvas {
@@ -30,6 +68,8 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
+    cursor: url('cursortest.png'), auto;
+
 }
 
 .player .playarea {
